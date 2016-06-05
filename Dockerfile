@@ -33,7 +33,4 @@ RUN yum install -y bzip2 bzip2-devel python-pip tmux screen && \
 pip install alibuild
 
 ADD bashrc /root/.bashrc
-ADD tmux-setup.sh /root/tmux-setup.sh
-
-ENTRYPOINT /root/tmux-setup.sh 
 
