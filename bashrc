@@ -16,6 +16,7 @@ fi
 if [[ -d /alicesw ]]; then
     cd /alicesw
     eval $(alienv load VO_ALICE@${ALI_WHAT}::latest-${ALI_VERSION})
+    aliBuild analytics on
 fi
 
 
