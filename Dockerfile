@@ -29,7 +29,7 @@ RUN yum install -y curl-devel && \
   cd .. && \
   rm -rf *2.8.3*
 
-RUN yum install -y bzip2 bzip2-devel python-pip tmux screen && \
+RUN yum install -y bzip2 bzip2-devel python-pip tmux screen ncurses-devel texinfo && \
 pip install alibuild
 
 ADD bashrc /root/.bashrc
