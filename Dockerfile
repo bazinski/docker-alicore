@@ -7,7 +7,10 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
         exinfo bison flex openssl-devel \
         libxml2-devel swig perl-ExtUtils-Embed \
         environment-modules \
-        libX11-devel mesa-libGLU-devel libXpm-devel libXft-devel gcc-gfortran
+        libX11-devel mesa-libGLU-devel libXpm-devel libXft-devel \
+        gcc-gfortran bzip2 bzip2-devel python-pip tmux screen \
+        ncurses-devel texinfo python-devel \
+        xorg-x11-fonts-Type1
 
 RUN ln -s /usr/bin/cmake3 /usr/bin/cmake && \
         cd /tmp && \
@@ -29,8 +32,8 @@ RUN yum install -y curl-devel && \
   cd .. && \
   rm -rf *2.8.3*
 
-RUN yum install -y bzip2 bzip2-devel python-pip tmux screen ncurses-devel texinfo python-devel&& \
-pip install alibuild
+
+RUN pip install alibuild
 
 ADD bashrc /root/.bashrc
 
