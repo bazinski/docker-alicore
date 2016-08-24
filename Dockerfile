@@ -35,5 +35,7 @@ RUN yum install -y curl-devel && \
 
 RUN pip install alibuild
 
+RUN yum install -y libpng-devel zeromq-devel yaml-cpp-devel
+
 ADD bashrc /root/.bashrc
 
