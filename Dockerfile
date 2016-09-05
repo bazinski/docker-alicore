@@ -33,7 +33,7 @@ RUN yum install -y curl-devel && \
   rm -rf *2.8.3*
 
 
-RUN pip install alibuild
+RUN pip install alibuild==1.4.0.rc1
 
 RUN yum install -y libpng-devel zeromq-devel yaml-cpp-devel
 
