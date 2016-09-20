@@ -39,6 +39,8 @@ RUN pip install alibuild==1.4.0.rc1
 
 RUN yum install -y libpng-devel yaml-cpp-devel
 
+RUN mkdir -p /cvmfs/alice.cern.ch /cvmfs/alice-ocdb.cern.ch
+
 COPY bashrc /root/.bashrc
 COPY etc-cvmfs-default-local /etc/cvmfs/default.local
 
