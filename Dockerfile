@@ -15,6 +15,7 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
         cvmfs cvmfs-config-default
 
 RUN ln -s /usr/bin/cmake3 /usr/bin/cmake && \
+    ln -s /usr/bin/ctest3 /usr/bin/ctest && \
         cd /tmp && \
         curl -O http://mirror.ibcp.fr/pub/gnu/gsl/gsl-1.16.tar.gz && \
         tar -zvxf gsl-1.16.tar.gz && \
