@@ -12,7 +12,8 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
         gcc-gfortran bzip2 bzip2-devel python-pip tmux screen \
         ncurses-devel texinfo python-devel \
         xorg-x11-fonts-Type1 \
-        cvmfs cvmfs-config-default
+        cvmfs cvmfs-config-default \
+        doxygen
 
 RUN ln -s /usr/bin/cmake3 /usr/bin/cmake && \
     ln -s /usr/bin/ctest3 /usr/bin/ctest && \
@@ -36,7 +37,7 @@ RUN yum install -y curl-devel && \
   rm -rf *2.8.3*
 
 
-RUN pip install alibuild==1.4.0.rc1
+RUN pip install alibuild==1.4.0
 
 RUN yum install -y libpng-devel yaml-cpp-devel
 
