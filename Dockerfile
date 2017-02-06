@@ -6,7 +6,7 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
         yum install -y git gettext-devel cmake3 \
         make wget which gcc gcc-c++ libtool automake autoconf zip \
         exinfo bison flex openssl-devel \
-        libxml2-devel swig perl-ExtUtils-Embed \
+        libxml2-devel swig \
         environment-modules \
         libX11-devel mesa-libGLU-devel libXpm-devel libXft-devel \
         gcc-gfortran bzip2 bzip2-devel python-pip tmux screen \
